@@ -22,7 +22,11 @@ data = [arr_1, arr_2, arr_3]
 ```
 we would expect the result of the 'landing' method `landing(data)` to be square `12`. 
 
-The board will always be a rectangle, but the size of the board could vary. 
+## Parameters 
+
+The board will always be a rectangle, but the size of the board could vary.
+
+Arrays will always have at 
 
 Complete the landing method in `lib/hop_skip_jump.rb` then check your results by running `rspec spec/hop_skip_jump_spec.rb`.
 

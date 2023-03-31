@@ -17,11 +17,23 @@ RSpec.describe '#landing' do
     arr4 = arr3.map {|n| n + 10}
     data = [arr1, arr2, arr3, arr4]
 
-    expect(landing(data)).to eq(arr2[3])
+    expect(landing(data)).to eq(14)
   end
 
-  it 'test3' do 
-    expect(landing([[1]])).to eq(1)
+  it 'non-square matrix' do
+    arr1 = [1, 2, 3]
+    arr2 = [4, 5, 6]
+    data = [arr1, arr2]
+
+    expect(landing(data)).to eq(3)
+  end
+  
+  it 'non-square matrix (vertical)' do 
+    arr1 = [1, 2]
+    arr2 = [3, 4]
+    arr3 = [4, 5]
+    data = [arr1, arr2, arr3]
+    expect(landing(data)).to eq(4)
   end
 
 end
